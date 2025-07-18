@@ -16,7 +16,7 @@ from flask_login import login_user
 import os, logging, secrets, string
 
 DB_NAME = 'database.db'
-SECRET_KEY='glMMtsg7Lo7TYPK3i/9Xf2QfNDX1Hdh7'
+SECRET_KEY='' # Inserire una nuova chiave segreta
 
 def create_app():
     app = Flask(__name__)
