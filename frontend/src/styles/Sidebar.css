@@ -1,0 +1,85 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Nasconde la sidebar */
+    width: 250px;
+    height: 100%;
+    background-color: #22305a;
+    color: white;
+    transition: all 0.5s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-size: 13px;
+}
+
+.sidebar.open {
+    left: 0; /* Mostra la sidebar */
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin: 20px 0;
+}
+
+.sidebar-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.sidebar-menu a:hover {
+    color: #ff6b6b;
+}
+
+/* Bottone per mostrare la sidebar */
+.sidebar-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #374a81;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1100;
+    opacity: 1; /* visibile */
+    transition: opacity 0.3s ease;
+}
+
+.sidebar-toggle.hidden {
+    opacity: 0; /* nascosto */
+    pointer-events: none; /* disabilita i clic */
+}
+
+.sidebar .bottom {
+    position: absolute;
+    bottom: 20px; /* Distanza dal fondo della sidebar */
+    left: 20px;   /* Distanza dal lato sinistro della sidebar */
+    right: 20px;  /* Distanza dal lato destro della sidebar (se necessario) */
+    padding: 10px;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.sidebar .bottom li {
+    margin: 5px 0;
+}

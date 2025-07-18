@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #06283D;
+  background: linear-gradient(to right, #06283D, #6b9dc1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.setup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.setup-form {
+  background-color: #cacaca;;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.form-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.instructions-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.instructions-list li {
+  margin-bottom: 10px;
+}
+
+.qr-code-container {
+  margin-bottom: 20px;
+}
+
+.qr-code {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.form-control:focus {
+  border-color: #32567d;
+}
+
+.btn-primary {
+  background-color: #374a81;
+  color: white;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #455da4;
+}
+
+.redirect-text {
+  font-size: 14px;
+}
+
+.redirect-button {
+  background-color: transparent;
+  color: #374a81;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.redirect-button:hover {
+  color: #455da4;
+}
+
+.feedback-message-p{
+  position: fixed;
+  bottom: 660px;
+  left: 558px;
+  padding: 15px 20px;
+  background-color: #357d38;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  animation: fadeOut 3s ease forwards;
+  z-index: 1000;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.Btn {
+  width: 120px;
+  height: 45px;
+  background-color: rgb(113, 129, 148);
+  border: none;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.342);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .5s;
+  margin: 15px auto;
+}
+
+.texts {
+  color: #374a81;
+  font-weight: 800;
+  letter-spacing: 1.1px;
+  z-index: 2;
+}
+
+.svgIcon {
+  z-index: 2;
+}
+
+.svgIcon path {
+  fill: #374a81;
+}
+
+.Btn:hover {
+  color: rgb(193, 219, 255);
+}
+
+.effect {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #374a81;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0;
+  transition-duration: .5s;
+}
+
+.Btn:hover .effect {
+  transform: scale(15);
+  transform-origin: center;
+  opacity: 1;
+  transition-duration: .5s;
+}
+
+.Btn:hover {
+  box-shadow: 0px 0px 5px #374a81,
+  0px 0px 10px #374a81,
+  0px 0px 30px #374a81;
+  transition-duration: .7s;
+}
+
+.Btn:hover .texts {
+  color: rgb(113, 129, 148);
+}
+
+.Btn:hover .svgIcon path {
+  fill: rgb(113, 129, 148);
+}
+
+.store-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.store-button {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.store-button:hover {
+  transform: scale(1.05);
+}
+
+.store-icon {
+  width: 160px;
+  height: 50px;
+}
+
+
+/*
+.feedback-messagep {
+  position: fixed;
+  bottom: 30px;
+  left: -100%; /* Inizia fuori dallo schermo //
+  padding: 10px 20px;
+  background-color: #357d38; /* Success green color //
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  z-index: 1000; /* Sempre in primo piano //
+  animation: slideInOut 5s ease-in-out forwards; /* Esegui l'animazione //
+}
+
+/* Definizione dell'animazione //
+@keyframes slideInOut {
+  0% {
+    left: -100%; /* Comincia fuori dalla schermata a sinistra //
+    opacity: 0; /* Invisibile all'inizio //
+  }
+  10% {
+    left: 20px; /* Posizione finale visibile //
+    opacity: 1; /* Visibile durante il movimento //
+  }
+  80% {
+    left: 20px; /* Rimane fermo in posizione visibile //
+    opacity: 1;
+  }
+  100% {
+    left: -100%; /* Esce ritirandosi verso sinistra //
+    opacity: 0; /* Scompare durante l'uscita //
+  }
+}
+*/

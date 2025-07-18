@@ -1,0 +1,20 @@
+.password-input-container-l {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.password-input-container-l input {
+    flex: 1;
+
+}
+
+.toggle-password-btn-l {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    color: #666;
+}
